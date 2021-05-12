@@ -1,0 +1,146 @@
+:root{
+  --h_gap: 12px;
+  --v_gap: 20px;
+}
+
+.main-container{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg,
+.title,
+.box,
+.cards,
+.card-title,
+.form > *,
+.footer{
+  background: #c4c4c4;
+}
+
+#header{
+  height: 40px;
+  width: 100%;
+}
+
+.title{
+  height: 40px;
+}
+
+.container-1 > .title{
+  margin: var(--v_gap) 32%;
+}
+.container-2 > .title{
+  margin: var(--v_gap) 24%;
+}
+.container-3 > .title{
+  margin: var(--v_gap) 16%;
+}
+.container-4 > .title{
+  margin: var(--v_gap) 36%;
+}
+
+
+
+.section > .box{
+  display: inline-block;
+  height: 200px;
+  width: calc(50% - var(--h_gap));
+}
+
+.float-right{
+  float: right;
+}
+
+.grid .box{
+  display: inline-block;
+  width: calc(25% - 3px);
+  height: 100px;
+}
+
+.cards{
+  padding: 28px 20px;
+}
+
+.card{
+  display: inline-block;
+  background: #fff;
+  padding: 8px 20px;
+  width: calc(100% / 3 - 59px);
+}
+
+.card > .card-title{
+  height: 25px;
+}
+
+.card > .box{
+  height: 100px;
+}
+
+.form{
+  margin: 0 25%;
+}
+
+.form > * {
+  margin: 12px 0;
+}
+
+.form > .input {
+  height: 40px;
+}
+
+.form > .term {
+  height: 150px;
+}
+
+.form > .btn {
+  display: inline-block;
+  height: 30px;
+  width: 48%;
+  margin-top: 0;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.footer > .box{
+  background: #fff;
+  display: inline-block;
+  height: 100px;
+  width: calc(50% - var(--h_gap));
+}
+
+.mt-0{
+  margin-top: 0;
+}
+
+.ma-0{
+  margin: 0;
+}
+.mx-0{
+  margin-left: 0;
+  margin-right: 0;
+}
+.my-0{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-3{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.mx-2{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.mx-5{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
