@@ -144,3 +144,26 @@
   margin-right: 20px;
 }
 
+
+@media (max-width: 960px) {
+  .section {
+    margin: var(--v_gap) 16%;
+  }
+  .section > .box {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+  }
+  .section .float-right {
+    float: none;
+  }
+  .grid .box {
+    width: calc(50% - 3px);
+  }
+  .card {
+    display: block;
+    margin: 0 23.5%;
+    width: calc(100% / 2);
+  }
+}
+
