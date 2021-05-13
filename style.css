@@ -1,21 +1,20 @@
-:root{
+:root {
   --h_gap: 12px;
   --v_gap: 40px;
 }
 
 * {
   box-sizing: border-box;
-
 }
 
-.main-container{
+.main-container {
   width: calc(100% - 64px);
   position: absolute;
   margin: 32px;
   padding: 12px;
   top: 0;
   left: 0;
-  box-shadow: 0 4px 12px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px 12px rgba(0, 0, 0, 0.2);
 }
 
 .bg,
@@ -23,88 +22,89 @@
 .box,
 .cards,
 .card-title,
-.form > *,
-.footer{
+.form>*,
+.footer {
   background: #c4c4c4;
 }
 
-#header{
+#header {
   height: 60px;
   width: 100%;
 }
 
-.title{
+.title {
   height: 60px;
 }
 
-.container-1 > .title{
+.container-1>.title {
   margin: var(--v_gap) 32%;
 }
-.container-2 > .title{
+
+.container-2>.title {
   margin: var(--v_gap) 24%;
 }
-.container-3 > .title{
+
+.container-3>.title {
   margin: var(--v_gap) 16%;
 }
-.container-4 > .title{
+
+.container-4>.title {
   margin: var(--v_gap) 36%;
 }
 
-
-
-.section > .box{
+.section>.box {
   display: inline-block;
   height: 500px;
   width: calc(50% - var(--h_gap));
 }
 
-.float-right{
+.float-right {
   float: right;
 }
 
-.grid .box{
+.grid .box {
   display: inline-block;
   width: calc(25% - 19px);
   height: 200px;
   margin: 8px;
 }
 
-.cards{
+.cards {
   padding: 80px 60px;
 }
 
-.card{
+.card {
   display: inline-block;
   background: #fff;
   padding: 0 20px;
   width: calc(100% / 3 - 35px);
 }
 
-.card > .card-title{
+.card>.card-title {
   height: 48px;
 }
 
-.card > .box{
+.card>.box {
   height: 250px;
 }
 
-.form{
+.form {
   margin: 0 25%;
 }
 
-.form > * {
+.form>* {
   margin: 12px 0;
 }
 
-.form > .input {
+.form>.input {
   height: 48px;
 }
 
-.form > .term {
+.form>.term {
   height: 200px;
 }
 
-.form > .btn {
+.form>.btn {
   display: inline-block;
   height: 48px;
   width: 48%;
@@ -116,58 +116,62 @@
   padding: 20px;
 }
 
-.footer > .box{
+.footer>.box {
   background: #fff;
   display: inline-block;
   height: 200px;
   width: calc(50% - var(--h_gap));
 }
 
-.mt-0{
+.mt-0 {
   margin-top: 0;
 }
 
-.ma-0{
+.ma-0 {
   margin: 0;
 }
-.mx-0{
+
+.mx-0 {
   margin-left: 0;
   margin-right: 0;
 }
-.my-0{
+
+.my-0 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.my-5{
+.my-5 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.mx-4{
+.mx-4 {
   margin-left: 16px;
   margin-right: 16px;
 }
 
-.mx-5{
+.mx-5 {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 
 @media (max-width: 1024px) {
   .section {
     margin: var(--v_gap) 16%;
   }
-  .section > .box {
+
+  .section>.box {
     display: inline-block;
     height: 200px;
     width: 100%;
   }
+
   .section .float-right {
     margin-top: var(--h_gap);
     float: none;
   }
+
   .grid .box {
     width: calc(50% - 19px);
   }
@@ -175,9 +179,9 @@
   .cards {
     padding: 40px 60px;
   }
+
   .card {
     margin: 40px 25%;
     width: calc(100% / 2);
   }
 }
-
