@@ -1,13 +1,21 @@
 :root{
   --h_gap: 12px;
-  --v_gap: 20px;
+  --v_gap: 40px;
+}
+
+* {
+  box-sizing: border-box;
+
 }
 
 .main-container{
-  width: 100%;
+  width: calc(100% - 64px);
   position: absolute;
+  margin: 32px;
+  padding: 12px;
   top: 0;
   left: 0;
+  box-shadow: 0 4px 12px 12px rgba(0,0,0,0.2);
 }
 
 .bg,
@@ -21,12 +29,12 @@
 }
 
 #header{
-  height: 40px;
+  height: 60px;
   width: 100%;
 }
 
 .title{
-  height: 40px;
+  height: 60px;
 }
 
 .container-1 > .title{
@@ -46,7 +54,7 @@
 
 .section > .box{
   display: inline-block;
-  height: 200px;
+  height: 500px;
   width: calc(50% - var(--h_gap));
 }
 
@@ -56,27 +64,28 @@
 
 .grid .box{
   display: inline-block;
-  width: calc(25% - 3px);
-  height: 100px;
+  width: calc(25% - 19px);
+  height: 200px;
+  margin: 8px;
 }
 
 .cards{
-  padding: 28px 20px;
+  padding: 80px 60px;
 }
 
 .card{
   display: inline-block;
   background: #fff;
-  padding: 8px 20px;
-  width: calc(100% / 3 - 59px);
+  padding: 0 20px;
+  width: calc(100% / 3 - 35px);
 }
 
 .card > .card-title{
-  height: 25px;
+  height: 48px;
 }
 
 .card > .box{
-  height: 100px;
+  height: 250px;
 }
 
 .form{
@@ -88,28 +97,29 @@
 }
 
 .form > .input {
-  height: 40px;
+  height: 48px;
 }
 
 .form > .term {
-  height: 150px;
+  height: 200px;
 }
 
 .form > .btn {
   display: inline-block;
-  height: 30px;
+  height: 48px;
   width: 48%;
   margin-top: 0;
 }
 
 .footer {
+  margin-top: var(--v_gap);
   padding: 20px;
 }
 
 .footer > .box{
   background: #fff;
   display: inline-block;
-  height: 100px;
+  height: 200px;
   width: calc(50% - var(--h_gap));
 }
 
@@ -129,14 +139,14 @@
   margin-bottom: 0;
 }
 
-.my-3{
-  margin-top: 12px;
-  margin-bottom: 12px;
+.my-5{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.mx-2{
-  margin-left: 8px;
-  margin-right: 8px;
+.mx-4{
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .mx-5{
@@ -145,7 +155,7 @@
 }
 
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .section {
     margin: var(--v_gap) 16%;
   }
@@ -155,14 +165,18 @@
     width: 100%;
   }
   .section .float-right {
+    margin-top: var(--h_gap);
     float: none;
   }
   .grid .box {
-    width: calc(50% - 3px);
+    width: calc(50% - 19px);
+  }
+
+  .cards {
+    padding: 40px 60px;
   }
   .card {
-    display: block;
-    margin: 0 23.5%;
+    margin: 40px 25%;
     width: calc(100% / 2);
   }
 }
